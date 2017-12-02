@@ -19,10 +19,6 @@ reble.xml
 *.tar.gz
 *.rar
 
-[html] view plain copy
-/.settings/  
-/target/  
-  
 # built application files  
 *.apk  
 *.ap_  

@@ -1,6 +1,6 @@
 # Compiled class file
 *.class
-
+*.reble.xml
 # Log file
 *.log
 

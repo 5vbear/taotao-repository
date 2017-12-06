@@ -11,4 +11,6 @@
 	<!-- 调用接口的包位置 -->
 	<dubbo:reference interface="com.taotao.service.ItemService" id="itemService" timeout="30000"/>
 	<dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService" timeout="30000"/>
-</beans> 
+	<dubbo:reference interface="com.taotao.content.service.ContentCategoryService" id="contentCategoryService" />
+	<dubbo:reference interface="com.taotao.content.service.ContentService" id="contentService" />
+</beans>

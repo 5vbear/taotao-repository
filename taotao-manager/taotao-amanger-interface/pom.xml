@@ -5,11 +5,10 @@
         <groupId>com.taotao</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>taotao-manager-interface</artifactId>
     <packaging>jar</packaging>
-
     <name>taotao-manager-interface</name>
     <url>http://maven.apache.org</url>
 

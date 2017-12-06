@@ -40,29 +40,29 @@
   </servlet-mapping>
 
   <!-- 连接池 启用 Web 监控统计功能    start-->
-     <filter>
+    <!-- <filter>
       <filter-name>DruidWebStatFilter</filter-name>
       <filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>
       <init-param>
         <param-name>exclusions</param-name>
         <param-value> *. js ,*. gif ,*. jpg ,*. png ,*. css ,*. ico ,/ druid /* </param-value >
       </init-param>
-      <!--缺省sessionStatMaxCount是1000个。你可以按需要进行配置-->
+      &lt;!&ndash;缺省sessionStatMaxCount是1000个。你可以按需要进行配置&ndash;&gt;
       <init-param>
         <param-name>sessionStatMaxCount</param-name>
         <param-value>1000</param-value>
       </init-param>
-      <!--druid 0.2.7版本开始支持profile，配置profileEnable能够监控单个url调用的sql列表-->
+      &lt;!&ndash;druid 0.2.7版本开始支持profile，配置profileEnable能够监控单个url调用的sql列表&ndash;&gt;
       <init-param>
         <param-name>profileEnable</param-name>
         <param-value>true</param-value>
       </init-param>
       <init-param>
-      <!--你可以配置principalSessionName，使得druid能够知道当前的session的用户是谁-->
+      &lt;!&ndash;你可以配置principalSessionName，使得druid能够知道当前的session的用户是谁&ndash;&gt;
         <param-name>principalSessionName</param-name>
         <param-value>users.username</param-value>
       </init-param>
-    <!--  你可以关闭session统计功能-->
+    &lt;!&ndash;  你可以关闭session统计功能&ndash;&gt;
       <init-param>
           <param-name>sessionStatEnable</param-name>
           <param-value>true</param-value>
@@ -80,6 +80,6 @@
     <servlet-mapping>
       <servlet-name> DruidStatView</servlet-name>
       <url-pattern>/druid/*</url-pattern>
-    </servlet-mapping >
+    </servlet-mapping >-->
   <!-- 连接池 启用 Web 监控统计功能    end-->
 </web-app>

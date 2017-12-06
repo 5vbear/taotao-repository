@@ -10,6 +10,7 @@
 
     <artifactId>taotao-manager</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>taotao-amanger-entity</module>
         <module>taotao-amanger-interface</module>

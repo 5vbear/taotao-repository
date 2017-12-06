@@ -5,11 +5,13 @@
         <groupId>com.taotao</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <artifactId>taotao-manager-service</artifactId>
     <packaging>war</packaging>
     <name>taotao-manager-service Maven Webapp</name>
     <url>http://maven.apache.org</url>
+
     <dependencies>
         <dependency>
             <groupId>com.taotao</groupId>

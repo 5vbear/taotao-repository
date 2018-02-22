@@ -1,9 +1,10 @@
 package com.taotao.mapper;
 
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 import com.taotao.entity.TbItemParamItem;
+import org.apache.ibatis.annotations.Param;
+
 import com.taotao.entity.TbItemParamItemExample;
 
 public interface TbItemParamItemMapper {

@@ -6,7 +6,7 @@ import java.util.List;
 import com.taotao.common.util.JsonUtils;
 import com.taotao.entity.TbContent;
 import com.taotao.entity.TbContentExample;
-import com.taotao.jedis.JedisClient;
+import com.taotao.content.jedis.JedisClient;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

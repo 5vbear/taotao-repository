@@ -12,8 +12,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>taotao-amanger-entity</module>
-        <module>taotao-amanger-interface</module>
+        <module>taotao-manager-entity</module>
+        <module>taotao-manager-interface</module>
         <module>taotao-manager-repository</module>
         <module>taotao-manager-service</module>
     </modules>

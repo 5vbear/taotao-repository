@@ -1,10 +1,10 @@
 package com.taotao.mapper;
 
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 import com.taotao.entity.TbUser;
 import com.taotao.entity.TbUserExample;
+import org.apache.ibatis.annotations.Param;
 
 public interface TbUserMapper {
     int countByExample(TbUserExample example);

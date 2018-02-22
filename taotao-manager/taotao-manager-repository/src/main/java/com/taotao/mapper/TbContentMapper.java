@@ -1,9 +1,10 @@
 package com.taotao.mapper;
 
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 import com.taotao.entity.TbContent;
+import org.apache.ibatis.annotations.Param;
+
 import com.taotao.entity.TbContentExample;
 
 public interface TbContentMapper {

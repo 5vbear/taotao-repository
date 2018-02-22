@@ -1,10 +1,11 @@
 package com.taotao.mapper;
 
 import java.util.List;
+
+import com.taotao.entity.TbContentCategoryExample;
 import org.apache.ibatis.annotations.Param;
 
 import com.taotao.entity.TbContentCategory;
-import com.taotao.entity.TbContentCategoryExample;
 
 public interface TbContentCategoryMapper {
     int countByExample(TbContentCategoryExample example);

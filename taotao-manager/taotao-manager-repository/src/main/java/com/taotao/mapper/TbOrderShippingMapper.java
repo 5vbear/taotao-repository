@@ -1,9 +1,10 @@
 package com.taotao.mapper;
 
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 import com.taotao.entity.TbOrderShipping;
+import org.apache.ibatis.annotations.Param;
+
 import com.taotao.entity.TbOrderShippingExample;
 
 public interface TbOrderShippingMapper {

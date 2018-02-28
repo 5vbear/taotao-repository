@@ -16,7 +16,7 @@
         <dependency>
             <groupId>com.taotao</groupId>
             <artifactId>taotao-manager-repository</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.taotao</groupId>
@@ -77,8 +77,8 @@
         </dependency>
         <dependency>
             <groupId>com.taotao</groupId>
-            <artifactId>taotao-amanger-entity</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>taotao-manager-entity</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.taotao</groupId>

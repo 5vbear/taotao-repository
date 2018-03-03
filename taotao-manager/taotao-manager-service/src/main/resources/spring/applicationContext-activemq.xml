@@ -16,6 +16,12 @@
 	<bean id="connectionFactory" class="org.springframework.jms.connection.SingleConnectionFactory">
 		<property name="targetConnectionFactory" ref="targetConnectionFactory"/>
 	</bean>
+	<!-- 配置JMSTemplate -->
+	<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="connectionFactory"/>
+		<!--<property name="defaultDestination" ref="default-queue"/>-->
+		<property name="receiveTimeout" value="10000" />
+	</bean>
 	<!-- 配置消息的Destination对象 -->
 	<bean id="test-queue" class="org.apache.activemq.command.ActiveMQQueue">
 		<!-- 设置消息队列的名字 -->
@@ -25,18 +31,5 @@
 	</bean>
 	<bean id="itemAddtopic" class="org.apache.activemq.command.ActiveMQTopic">
 		<constructor-arg name="name" value="item-add-topic"></constructor-arg>
-	</bean>
-	<!--设置默认队列-->
-	<bean id="default-queue" class="org.apache.activemq.command.ActiveMQQueue">
-		<!-- 设置消息队列的名字 -->
-		<constructor-arg>
-			<value>default-queue</value>
-		</constructor-arg>
-	</bean>
-	<!-- 配置JMSTemplate -->
-	<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
-		<property name="connectionFactory" ref="connectionFactory"/>
-		<property name="defaultDestination" ref="default-queue"/>
-		<property name="receiveTimeout" value="10000" />
 	</bean>
 </beans>

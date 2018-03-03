@@ -10,7 +10,7 @@
     <artifactId>taotao-manager-entity</artifactId>
     <packaging>jar</packaging>
 
-    <name>taotao-amanger-entity</name>
+    <name>taotao-manager-entity</name>
     <url>http://maven.apache.org</url>
 
     <properties>

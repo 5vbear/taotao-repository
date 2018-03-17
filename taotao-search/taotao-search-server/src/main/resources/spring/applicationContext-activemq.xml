@@ -27,16 +27,16 @@
 		<constructor-arg name="name" value="item-add-topic"></constructor-arg>
 	</bean>
 	<!--设置默认队列-->
-	<bean id="default-queue" class="org.apache.activemq.command.ActiveMQQueue">
-		<!-- 设置消息队列的名字 -->
+	<!--<bean id="default-queue" class="org.apache.activemq.command.ActiveMQQueue">
+		&lt;!&ndash; 设置消息队列的名字 &ndash;&gt;
 		<constructor-arg>
 			<value>default-queue</value>
 		</constructor-arg>
-	</bean>
+	</bean>-->
 	<!-- 配置JMSTemplate -->
 	<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
 		<property name="connectionFactory" ref="connectionFactory"/>
-		<property name="defaultDestination" ref="default-queue"/>
+		<!--<property name="defaultDestination" ref="default-queue"/>-->
 		<property name="receiveTimeout" value="10000" />
 	</bean>
 
@@ -51,7 +51,7 @@
 	<bean id="itemAddMessageListener" class="com.taotao.search.listener.ItemAddMessageListener"/>
 	<bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
 		<property name="connectionFactory" ref="connectionFactory" />
-		<property name="destination" ref="itemAddTopic" />
+		<property name="destination" ref="itemAddtopic" />
 		<property name="messageListener" ref="itemAddMessageListener" />
 	</bean>
 </beans>

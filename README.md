@@ -1,0 +1,2 @@
+# taotao-respository
+高可用的综合电商服务平台，包含后台商品管理，会员管理，订单管理，前端购物平台，商品搜索，商品详情，订单物流中心等子系统（系统架构springmvc+mybatis+dubbo+zookeeper+redis+solr+activemq；zookeeper高可用集群，redis高可用集群，solr高可用集群，freemarker网页静态化，activemq消息队列，单点登录等）

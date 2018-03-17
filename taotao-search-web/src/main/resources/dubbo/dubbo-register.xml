@@ -7,7 +7,7 @@
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-search-web"/>
 	<!-- 注册中心地址 -->
-	<dubbo:registry protocol="zookeeper" address="192.168.25.129:2181"/>
+	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"/>
 	<!-- 调用接口的包位置 -->
 	<dubbo:reference interface="com.taotao.search.service.SearchService" id="searchService" />
 </beans> 
